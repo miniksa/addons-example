@@ -16,6 +16,5 @@
     "target": "url",
     "username": "str",
     "password": "str"
-  },
-  "image": "hub/{arch}-sync"
+  }
 }
