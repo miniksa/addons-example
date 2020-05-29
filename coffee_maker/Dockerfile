@@ -7,9 +7,7 @@ ENV LANG C.UTF-8
 # Setup base
 RUN \
     apk add --no-cache \
-        curl \
-        php7 \
-        php7-curl
+        php7
 
 # Copy data
 COPY run.sh /
