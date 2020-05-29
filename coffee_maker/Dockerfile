@@ -1,12 +1,7 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+ARG BUILD_FROM=hassioaddons/base:7.2.0
+FROM ${BUILD_FROM}
 
-# Add env
-ENV LANG C.UTF-8
-
-# Setup base
-RUN \
-    apk add php7 --update-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ --allow-untrusted
+RUN apk add --no-cache php7
 
 # Copy data
 COPY run.sh /
